@@ -5,6 +5,7 @@ function result()
   var roll=Number(document.getElementById("value2").value);
 
   //for A division
+  if(divi== "D")
   {  
     if(roll==9)
        {alert("No result for this roll number");}
