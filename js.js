@@ -1,9 +1,3 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styler.css">
-        <title>vit result</title>
-        <script language="javascript">
-                
 function result()
 {
 
@@ -11,7 +5,6 @@ function result()
   var roll=Number(document.getElementById("value2").value);
 
   //for A division
-  if(divi== "D")
   {  
     if(roll==9)
        {alert("No result for this roll number");}
@@ -131,30 +124,3 @@ console._log = console.log
 console.log = function (log) {
   return console._log(`%c ${log}`, 'color:rgba(255,255,255,0)');
 }
-
-
-        </script>
-  </head>
-  <body>
-  <!---  <div class=".bg-img ">--->
-  <pre><b>RESULT VIEWER<b></pre>
-
-  <form  class="container" method="POST">
-    <h1>DETAILS</h1>
-                              <label for="Branch">Branch:</label>
-
-            <select id="Branch">
-                       <option value="Computer">Computer</option>
-                       <option value="IT">IT</option>
-            </select>
-     <input type="text" id="value1" placeholder="Enter Div in cap's" name="diiv" onkeypress="return(event.charCode > 64 && event.charCode < 90)" maxlength="1" required>
-    <input type="text" id="value2" placeholder="Enter rollno" value="" name="rollno" maxlength="2" required>
-
-   <button onclick="result()" type="button" class="btn"><p id="q34">Click me</p></button>
-
-    <p style="color:grey;font-size: 12px">You must signin to vierp in another tab to view the result  </p>
-    </form>
-</div>
-        
-  </body>
-</html>
